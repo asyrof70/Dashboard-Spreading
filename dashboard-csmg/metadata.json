@@ -1,0 +1,6 @@
+{
+  "name": "Pemetaan Spreading Aetra Air Tangerang",
+  "description": "Dashboard Web GIS Pemetaan Minat Pelanggan Air Bersih Aetra Air Tangerang dengan Google Satellite, Visualisasi Pipa Jaringan, dan Analisis Konversi",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
