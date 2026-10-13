@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --pam-blue: #005baa;
+  --pam-orange: #e46423;
+  --pam-white: #ffffff;
+}
+
+/* Leaflet Container Overrides */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #090d16;
+  font-family: inherit;
+}
+
+/* Leaflet Pane Stacking Hierarchy */
+.leaflet-pane.leaflet-zonesPane-pane {
+  z-index: 400 !important;
+}
+
+.leaflet-pane.leaflet-pipesPane-pane {
+  z-index: 500 !important;
+}
+
+.leaflet-pane.leaflet-labelsPane-pane {
+  z-index: 550 !important;
+}
+
+.leaflet-pane.leaflet-customersPane-pane {
+  z-index: 600 !important;
+}
+
+/* Custom Marker Styling */
+.custom-customer-marker,
+.cad-point-marker {
+  background: transparent;
+  border: none;
+}
+
+/* CAD Map Tooltip Styling */
+.cad-map-tooltip,
+.cad-pipe-tooltip {
+  background: rgba(15, 23, 42, 0.95) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(56, 189, 248, 0.4) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7) !important;
+  padding: 4px 8px !important;
+}
+
+.cad-map-tooltip::before,
+.cad-pipe-tooltip::before {
+  border-top-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+/* Custom Tooltip Styling */
+.pipe-tooltip {
+  background: rgba(15, 23, 42, 0.95) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(56, 189, 248, 0.3) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  font-size: 11px !important;
+  padding: 4px 8px !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 12px !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
